@@ -63,10 +63,10 @@ class JankenGamePage extends Component {
           <Header>じゃんけん・ぽん！</Header>
           <HandBox actionPon={(hand) => this.pon(hand)} />
           <Paper style={{ width: 400 }} zDepth={2}>
-            <Link to="/scores">
+            <Link id="tab-scores" to="/scores">
               <FlatButton label="Result List" style={activeStyle('scores')} />
             </Link>
-            <Link to="/status">
+            <Link id="tab-status" to="/status">
               <FlatButton label="Result Point" style={activeStyle('status')} />
             </Link>
             <Route
